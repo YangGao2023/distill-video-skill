@@ -18,11 +18,11 @@ If the user only wants a quick text summary of what the video says, use `watch-v
 
 Assume the user does not code and has never installed command-line tools.
 
-1. **If the user asked you to install this skill**, put the entire `distill-video/` folder (including `SKILL.md` and `references/`) into the active agent's skills directory — do **not** leave it sitting on the Desktop:
+1. **If the user asked you to install this skill**, put the entire `distill-video/` folder (including `SKILL.md` and `references/`) into the active agent's local skills directory — do **not** leave it sitting on the Desktop:
    - Claude Code: `~/.claude/skills/distill-video/`
    - Codex: `~/.codex/skills/distill-video/`
    - Antigravity / Gemini: `~/.gemini/config/skills/distill-video/`
-   - Doubao Desktop (豆包电脑版) or other GUI agents: keep it in the workspace or zip the `distill-video` folder and guide the user in one sentence to import via **技能 → 我的技能 → 上传技能** (if the agent cannot register skills automatically).
+   - Doubao Desktop Local PC Mode (豆包电脑版「本地电脑」) & cross-agent standard: `~/.agents/skills/distill-video/` (only fall back to manual zip upload via **技能 → 我的技能 → 上传技能** if network blocks downloading).
 2. **Silently check what is installed** before running analysis commands: test `ffmpeg -version`, `yt-dlp --version`, and a speech-to-text option (Python `faster-whisper` / `whisper`, or `yt-dlp` subtitle download).
 3. **Auto-install what is missing (ask permission once in plain words)**:
    - On **Windows**: run `winget install -e --id Gyan.FFmpeg` and `winget install -e --id yt-dlp.yt-dlp` (then refresh `PATH` or locate the installed `.exe` directly). For speech-to-text, also run `pip install faster-whisper` (if Python is available).

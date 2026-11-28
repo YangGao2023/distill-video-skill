@@ -15,7 +15,7 @@
 打开你电脑上任意一个能干活的 AI 助手（例如**豆包电脑版**切到「办公任务 + 本地电脑」，或 **Claude Code / Codex / Antigravity**），直接复制下面这句大白话发给它：
 
 > **复制发给你的 AI：**
-> `帮我从 https://github.com/YangGao2023/distill-video-skill 下载并把 distill-video 技能装进你正在用的技能目录（比如 ~/.claude/skills、~/.codex/skills、~/.gemini/config/skills，如果是豆包电脑版就帮我准备好压缩包并告诉我点哪里上传），顺便检查我电脑缺不缺 ffmpeg、yt-dlp 或 whisper，缺就帮我装好，装完告诉我。`
+> `帮我从 https://github.com/YangGao2023/distill-video-skill 下载并把 distill-video 技能装进你正在用的本地技能目录（比如 ~/.agents/skills、~/.claude/skills、~/.codex/skills 或 ~/.gemini/config/skills），顺便检查我电脑缺不缺 ffmpeg、yt-dlp 或 whisper，缺就帮我装好，装完告诉我。`
 
 等 AI 说装好之后，把你想学的爆款视频链接贴给它（或把视频文件直接拖进对话框），再发一句：
 
